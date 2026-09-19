@@ -3,131 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>👁️💙 INFOCHILETODOS</h1> - Salud Visual</title>
+    <title>InfoChileTodos - Salud Visual</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f7fc;
             margin: 0;
             padding: 0;
+            text-align: center;
             color: #333;
         }
-        .header {
+        .header-box {
             background: linear-gradient(135deg, #00c6ff, #0072ff);
             color: white;
-            text-align: center;
             padding: 30px 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 20px;
         }
-        .header h1 {
+        .header-box h1 {
             margin: 0;
             font-size: 28px;
-            letter-spacing: 1px;
         }
-        .header p {
-            margin: 10px 0 0;
+        .header-box p {
+            margin: 10px 0 0 0;
             font-size: 16px;
-            opacity: 0.9;
         }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 0 15px 40px 15px;
-        }
-        .intro-box {
-            background: #e8f1fc;
-            border-left: 5px solid #0072ff;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 15px;
-            line-height: 1.5;
+        .content-card {
+            background: white;
+            margin: 15px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: left;
         }
         .btn {
             display: block;
-            width: 100%;
-            padding: 14px;
-            text-align: center;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            margin-bottom: 12px;
-            box-sizing: border-box;
-        }
-        .btn-whatsapp {
-            background-color: #25d366;
-            color: white;
-        }
-        .btn-tiktok {
-            background-color: #000000;
-            color: white;
-        }
-        .btn-blog {
-            background-color: #6c5ce7;
-            color: white;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            color: #003366;
-            font-size: 20px;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-        .card {
-            background: white;
+            width: 90%;
+            max-width: 500px;
+            margin: 15px auto;
             padding: 15px;
             border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            border: 1px solid #e1e8ed;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            text-align: center;
         }
-        .card h3 {
-            margin-top: 0;
-            color: #0056b3;
-            font-size: 17px;
-        }
-        .card p {
-            margin-bottom: 0;
-            color: #555;
-            font-size: 14px;
-            line-height: 1.4;
+        .btn-whatsapp { background-color: #25d366; }
+        .btn-tiktok { background-color: #000000; }
+        .btn-blog { background-color: #6c5ce7; }
+        
+        .section-title {
+            color: #0b3c5d;
+            font-size: 22px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>INFOCHILETODOS</h1>
+    <!-- Encabezado con el cuadro celeste y el formato solicitado -->
+    <div class="header-box">
+        <h1>👁️💙 InfoChileTodos</h1>
         <p>Salud Visual</p>
     </div>
 
-    <div class="container">
-        <div class="intro-box">
-            Tu espacio dedicado al cuidado de la visión. Agenda tu hora de forma rápida y sencilla. Escríbeme por WhatsApp para coordinar tu atención.
-        </div>
+    <!-- Cuadro de descripción -->
+    <div class="content-card">
+        <p>Tu espacio dedicado al cuidado de la visión. Agenda tu hora de forma rápida y sencilla. Escríbeme por WhatsApp para coordinar tu atención.</p>
+    </div>
 
-        <!-- 1. Botón de WhatsApp Corregido -->
-        <a href="https://api.whatsapp.com/send?phone=56997473606" class="btn btn-whatsapp">📅 Enviar Mensaje WhatsApp</a>
+    <!-- Botones principales -->
+    <a href="https://wa.me/" class="btn btn-whatsapp">📅 Enviar Mensaje WhatsApp</a>
+    <a href="https://www.tiktok.com/" class="btn btn-tiktok">🎵 Ver mi TikTok</a>
+    <a href="#" class="btn btn-blog">🌐 Visitar mi Blog</a>
 
-        <!-- 2. Botón de TikTok Corregido -->
-        <a href="https://www.tiktok.com/@agenda.hora.optica" class="btn btn-tiktok">🎵 Ver mi TikTok</a>
-
-        <!-- 3. Botón Visitar mi Blog (Violeta) -->
-        <a href="https://infochiletodos.blogspot.com/" class="btn btn-blog">🌐 Visitar mi Blog</a>
-
-        <h2 class="section-title">Consejos de Salud Visual</h2>
-
-        <div class="card">
-            <h3>📱 Evita la Fatiga Digital</h3>
-            <p>El uso prolongado de pantallas causa sequedad y cansancio. Recuerda hacer pausas periódicas para relajar tus ojos.</p>
-        </div>
-
-        <div class="card">
-            <h3>⏱️ Regla 20-20-20</h3>
-            <p>Cada 20 minutos, aparta la mirada de la pantalla durante 20 segundos y enfoca un objeto a 6 metros de distancia.</p>
-        </div>
+    <!-- Sección de Consejos -->
+    <h2 class="section-title">Consejos de Salud Visual</h2>
+    
+    <div class="content-card">
+        <h3>📱 Evita la Fatiga Digital</h3>
+        <p>El uso prolongado de pantallas causa sequedad y cansancio. Recuerda hacer pausas periódicas para relajar tus ojos.</p>
     </div>
 
 </body>
